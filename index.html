@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Lega Serie H</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Lato:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <i class="fa-solid fa-xmark" id="back"></i>
+
+    <!-- ============ HOME ============ -->
+    <div id="homepage" class="page attiva">
+      <div class="luce"></div>
+      <div id="hero">
+        <h1 id="titolo">H</h1>
+        <p id="scritta-lega">LEGA SERIE H</p>
+      </div>
+      <nav id="nav-home">
+        <div class="pulsante" data-target="classpage">
+          <i class="fa-solid fa-ranking-star"></i>
+          <h3>CLASSIFICA</h3>
+        </div>
+        <div class="pulsante" data-target="statspage">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3>STATISTICHE</h3>
+        </div>
+        <div class="pulsante" data-target="squadpage">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>SQUADRE</h3>
+        </div>
+      </nav>
+
+      <section id="news">
+        <h2 class="titolo-pagina">NEWS</h2>
+        <div id="news-lista">
+          <!-- generata da script.js a partire da data.js -->
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ CLASSIFICA ============ -->
+    <div id="classpage" class="page">
+      <div class="luce"></div>
+      <h2 class="titolo-pagina">CLASSIFICA</h2>
+      <table id="tabella-classifica">
+        <thead>
+          <tr>
+            <td>Squadra</td>
+            <td>PT</td>
+            <td>W</td>
+            <td>T</td>
+            <td>L</td>
+            <td>MVP</td>
+            <td>DR</td>
+          </tr>
+        </thead>
+        <tbody id="corpo-classifica">
+          <!-- righe generate da script.js a partire da data.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ============ STATISTICHE ============ -->
+    <div id="statspage" class="page">
+      <div class="luce"></div>
+      <h2 class="titolo-pagina">STATISTICHE</h2>
+      <div id="stat-tabs">
+        <div class="stat-tab" data-stat="marcatori">MARCATORI</div>
+        <div class="stat-tab" data-stat="mvp">MVP</div>
+        <div class="stat-tab" data-stat="portieri">GK</div>
+      </div>
+      <div id="stat-lista">
+        <!-- lista generata da script.js -->
+      </div>
+    </div>
+
+    <!-- ============ SQUADRE ============ -->
+    <div id="squadpage" class="page">
+      <div class="luce"></div>
+      <!-- schede squadra generate da script.js a partire da data.js -->
+    </div>
+
+    <!-- ============ BACHECA TROFEI (overlay) ============ -->
+    <div id="bacheca-overlay" class="overlay">
+      <div class="bacheca-card">
+        <i class="fa-solid fa-xmark" id="bacheca-chiudi"></i>
+        <h3 id="bacheca-nome"></h3>
+        <p id="bacheca-squadra" class="bacheca-squadra"></p>
+        <div id="bacheca-trofei"></div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
