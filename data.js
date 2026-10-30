@@ -122,6 +122,11 @@ const DATA = {
       data: "2026-06-09",
       titolo: "La Commissione ha deciso!",
       testo: "Con il campo appena rinnovato e poche gare giocate, l’annata non sarà conteggiata: il titolo non verrà assegnato per questa stagione."
+    },
+    {
+      data: "2026-10-30",
+      titolo: "Il precampionato si è concluso!",
+      testo: "Si chiude con un 5-2 la partita di precampionato, le squadre si stanno riorganizzando e si presenteranno ufficialmente in vista della prima di campionato."
     }
     // { data: "AAAA-MM-GG", titolo: "...", testo: "..." },
   ]
