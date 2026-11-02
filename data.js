@@ -29,7 +29,7 @@ const DATA = {
   standings: [
     {
       nome: "Acting Challenge",
-      logo: "Black and White Minimalist T-Shirt Mockup Instagram Post_20261102_211645_0000.png", // opzionale: percorso a un'immagine del logo (es. "loghi/princeps.png")
+      logo: "logo1_20261102_212506_0000.png", // opzionale: percorso a un'immagine del logo (es. "loghi/princeps.png")
       punti: 0,
       vinte: 0,
       pareggi: 0,
