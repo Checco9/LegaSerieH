@@ -28,8 +28,8 @@ const DATA = {
   // ---------- CLASSIFICA ----------
   standings: [
     {
-      nome: "Princeps",
-      logo: "", // opzionale: percorso a un'immagine del logo (es. "loghi/princeps.png")
+      nome: "Acting Challenge",
+      logo: "Black and White Minimalist T-Shirt Mockup Instagram Post_20261102_211645_0000.png", // opzionale: percorso a un'immagine del logo (es. "loghi/princeps.png")
       punti: 0,
       vinte: 0,
       pareggi: 0,
