@@ -33,19 +33,19 @@ const DATA = {
       punti: 0,
       vinte: 0,
       pareggi: 0,
-      perse: 0,
+      perse: 1,
       mvp: 0,
-      dr: 0
+      dr: "-1"
     },
     {
       nome: "High Sea",
       logo: "",
-      punti: 0,
-      vinte: 0,
+      punti: 3,
+      vinte: 1,
       pareggi: 0,
       perse: 0,
       mvp: 0,
-      dr: 0
+      dr: 1
     }
     // Per aggiungere una nuova squadra, copia uno di questi blocchi
     // e incollalo qui sotto con una virgola prima.
@@ -56,32 +56,32 @@ const DATA = {
   // puoi anche lasciare l'array vuoto [].
   marcatori: [
     {
-      nome: "Berardi", squadra: "Princeps", gol: 0,
+      nome: "Berardi", squadra: "FCAC", gol: 2,
       trofei: [
         { nome: "Scudetto", numero: 1 },
         { nome: "Pallone D'Oro", numero: 1 }
       ]
     },
-    { nome: "Campanale", squadra: "Princeps", gol: 0, trofei: [
+    { nome: "Campanale", squadra: "FCAC", gol: 4, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Zaza", squadra: "Princeps", gol: 0, trofei: [
+    { nome: "Zaza", squadra: "FCAC", gol: 1, trofei: [
       { nome: "Scudetto", numero: 1 },
       { nome: "MVP Centrocampisti", numero: 1 }
     ] },
-    { nome: "Rossano", squadra: "Princeps", gol: 0, trofei: [
+    { nome: "Rossano", squadra: "FCAC", gol: 0, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Grosso", squadra: "Princeps", gol: 0, trofei: [] },
-    { nome: "La Stella", squadra: "Princeps", gol: 0, trofei: [
+    { nome: "Grosso", squadra: "FCAC", gol: 0, trofei: [] },
+    { nome: "La Stella", squadra: "FCAC", gol: 0, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Bovino", squadra: "High Sea", gol: 0, trofei: [
+    { nome: "Bovino", squadra: "High Sea", gol: 2, trofei: [
       { nome: "MVP Attaccanti", numero: 1 }
     ] },
-    { nome: "Dell'Accio", squadra: "High Sea", gol: 0, trofei: [] },
-    { nome: "Capogna", squadra: "High Sea", gol: 0, trofei: [] },
-    { nome: "Bacellieri", squadra: "High Sea", gol: 0, trofei: [] },
+    { nome: "Dell'Accio", squadra: "High Sea", gol: 1, trofei: [] },
+    { nome: "Capogna", squadra: "High Sea", gol: 4, trofei: [] },
+    { nome: "Bacellieri", squadra: "High Sea", gol: 1, trofei: [] },
     { nome: "Chiarulli", squadra: "High Sea", gol: 0, trofei: [
       { nome: "MVP Difensori", numero: 1 }
     ] },
@@ -102,14 +102,14 @@ const DATA = {
 
   // ---------- PORTIERI (es. clean sheet / gol subiti) ----------
   portieri: [
-    { nome: "La Stella", squadra: "Princeps", cleanSheet: 0, golSubiti: 0 },
-    { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 0 }
+    { nome: "La Stella", squadra: "Princeps", cleanSheet: 0, golSubiti: 9 },
+    { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 8 }
     // Aggiorna dopo ogni partita.
   ],
 
   // ---------- FORMAZIONI SQUADRE ----------
   squadre: [
-    { nome: "Princeps", formazione: "linepu_princeps.png" },
+    { nome: "FCAC", formazione: "linepu_princeps.png" },
     { nome: "High Sea", formazione: "lineup_highsea.png" }
     // Per aggiungere una squadra, aggiungi qui nome + nome file immagine.
   ],
@@ -119,14 +119,9 @@ const DATA = {
   // ordinate dalla più recente, non serve tenerle in ordine qui.
   news: [
     {
-      data: "2026-06-09",
-      titolo: "La Commissione ha deciso!",
-      testo: "Con il campo appena rinnovato e poche gare giocate, l’annata non sarà conteggiata: il titolo non verrà assegnato per questa stagione."
-    },
-    {
-      data: "2026-10-30",
-      titolo: "Il precampionato si è concluso!",
-      testo: "Si chiude con un 5-2 la partita di precampionato, le squadre si stanno riorganizzando e si presenteranno ufficialmente in vista della prima di campionato."
+      data: "2026-11-06",
+      titolo: "Prima di campionato!",
+      testo: "Si chiude con un 9-8 la prima di campionato!"
     }
     // { data: "AAAA-MM-GG", titolo: "...", testo: "..." },
   ]
