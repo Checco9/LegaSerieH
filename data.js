@@ -44,7 +44,7 @@ const DATA = {
       vinte: 1,
       pareggi: 0,
       perse: 0,
-      mvp: 0,
+      mvp: 1,
       dr: 1
     }
     // Per aggiungere una nuova squadra, copia uno di questi blocchi
@@ -95,8 +95,7 @@ const DATA = {
 
   // ---------- MVP (numero di premi MVP vinti) ----------
   mvp: [
-    { nome: "Rossano", squadra: "Princeps", premi: 0 },
-    { nome: "Chiarulli", squadra: "High Sea", premi: 0 }
+    { nome: "Bovino", squadra: "High Sea", premi: 1 }
     // Aggiungi qui i giocatori che vincono il premio MVP di giornata.
   ],
 
