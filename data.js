@@ -33,19 +33,19 @@ const DATA = {
       punti: 0,
       vinte: 0,
       pareggi: 0,
-      perse: 1,
+      perse: 2,
       mvp: 0,
-      dr: "-1"
+      dr: "-4"
     },
     {
       nome: "High Sea",
       logo: "",
-      punti: 3,
-      vinte: 1,
+      punti: 6,
+      vinte: 2,
       pareggi: 0,
       perse: 0,
-      mvp: 1,
-      dr: 1
+      mvp: 2,
+      dr: 4
     }
     // Per aggiungere una nuova squadra, copia uno di questi blocchi
     // e incollalo qui sotto con una virgola prima.
@@ -56,16 +56,16 @@ const DATA = {
   // puoi anche lasciare l'array vuoto [].
   marcatori: [
     {
-      nome: "Berardi", squadra: "FCAC", gol: 2,
+      nome: "Berardi", squadra: "FCAC", gol: 3,
       trofei: [
         { nome: "Scudetto", numero: 1 },
         { nome: "Pallone D'Oro", numero: 1 }
       ]
     },
-    { nome: "Campanale", squadra: "FCAC", gol: 4, trofei: [
+    { nome: "Campanale", squadra: "FCAC", gol: 5, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Zaza", squadra: "FCAC", gol: 1, trofei: [
+    { nome: "Zaza", squadra: "FCAC", gol: 2, trofei: [
       { nome: "Scudetto", numero: 1 },
       { nome: "MVP Centrocampisti", numero: 1 }
     ] },
@@ -76,13 +76,13 @@ const DATA = {
     { nome: "La Stella", squadra: "FCAC", gol: 0, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Bovino", squadra: "High Sea", gol: 2, trofei: [
+    { nome: "Bovino", squadra: "High Sea", gol: 3, trofei: [
       { nome: "MVP Attaccanti", numero: 1 }
     ] },
-    { nome: "Dell'Accio", squadra: "High Sea", gol: 1, trofei: [] },
-    { nome: "Capogna", squadra: "High Sea", gol: 4, trofei: [] },
-    { nome: "Bacellieri", squadra: "High Sea", gol: 1, trofei: [] },
-    { nome: "Chiarulli", squadra: "High Sea", gol: 0, trofei: [
+    { nome: "Dell'Accio", squadra: "High Sea", gol: 3, trofei: [] },
+    { nome: "Capogna", squadra: "High Sea", gol: 5, trofei: [] },
+    { nome: "Bacellieri", squadra: "High Sea", gol: 2, trofei: [] },
+    { nome: "Chiarulli", squadra: "High Sea", gol: 1, trofei: [
       { nome: "MVP Difensori", numero: 1 }
     ] },
     { nome: "Gallo", squadra: "High Sea", gol: 0, trofei: [
@@ -95,14 +95,15 @@ const DATA = {
 
   // ---------- MVP (numero di premi MVP vinti) ----------
   mvp: [
-    { nome: "Bovino", squadra: "High Sea", premi: 1 }
+    { nome: "Bovino", squadra: "High Sea", premi: 1 },
+    { nome: "Chiarulli", squadra: "High Sea", premi: 1 }
     // Aggiungi qui i giocatori che vincono il premio MVP di giornata.
   ],
 
   // ---------- PORTIERI (es. clean sheet / gol subiti) ----------
   portieri: [
-    { nome: "La Stella", squadra: "Princeps", cleanSheet: 0, golSubiti: 9 },
-    { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 8 }
+    { nome: "La Stella", squadra: "FCAC", cleanSheet: 0, golSubiti: 15 },
+    { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 11 }
     // Aggiorna dopo ogni partita.
   ],
 
@@ -121,6 +122,11 @@ const DATA = {
       data: "2026-11-06",
       titolo: "Prima di campionato!",
       testo: "Si chiude con un 9-8 la prima di campionato!"
+    },
+    {
+      data: "2026-11-10",
+      titolo: "Ancora loro!",
+      testo: "Altra prestazione convincente degli High Sea che battono 6-3 gli avversari al T.Stadium! Importante nella vittoria è l'apporto difensivo dell'mvp Chiarulli!"
     }
     // { data: "AAAA-MM-GG", titolo: "...", testo: "..." },
   ]
