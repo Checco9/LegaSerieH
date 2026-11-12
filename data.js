@@ -28,14 +28,14 @@ const DATA = {
   // ---------- CLASSIFICA ----------
   standings: [
     {
-      nome: "Acting Challenge",
+      nome: "FCAC",
       logo: "logo1_20261102_212506_0000.png", // opzionale: percorso a un'immagine del logo (es. "loghi/princeps.png")
       punti: 0,
       vinte: 0,
       pareggi: 0,
       perse: 0,
       mvp: 0,
-      dr: "0"
+      dr: 0
     },
     {
       nome: "High Sea",
@@ -114,7 +114,7 @@ const DATA = {
   // ricalcolati dalle partite giocate qui sotto (i numeri scritti a mano
   // in "standings" vengono ignorati, tranne "mvp" che resta manuale).
   // Se false, la classifica resta quella scritta a mano in "standings".
-  classificaAutomatica: "true",
+  classificaAutomatica: true,
 
   // ---------- PARTITE ----------
   // Una riga per partita. Campi:
@@ -136,10 +136,10 @@ const DATA = {
   partite: [
       { giornata: 1, data: "2026-11-06", ora: "11:00", campo: "T.Stadium",
        casa: "FCAC", trasferta: "High Sea",
-       golCasa: 8, golTrasferta: 9, marcatori: "Berardi 2, Bovino 2, Campanale 4, Zaza, Dell'Accio, Baccellieri, Capogna 4, Autogoal", mvp: "Bovino" },
+       golCasa: 8, golTrasferta: 9, marcatori: "Berardi 2, Bovino 2, Campanale 4, Zaza, Dell'Accio, Bacellieri, Capogna 4, Autogoal", mvp: "Bovino" },
      { giornata: 2, data: "2026-11-10", ora: "10:00", campo: "T.Stadium",
        casa: "High Sea", trasferta: "FCAC",
-       golCasa: 6, golTrasferta: 3, marcatori: "Berardi, Bovino, Campanale, Zaza, Dell'Accio 2, Baccellieri, Capogna, Chiarulli", mvp: "Chiarulli" }
+       golCasa: 6, golTrasferta: 3, marcatori: "Berardi, Bovino, Campanale, Zaza, Dell'Accio 2, Bacellieri, Capogna, Chiarulli", mvp: "Chiarulli" }
   ],
    
   // ---------- FORMAZIONI SQUADRE ----------
