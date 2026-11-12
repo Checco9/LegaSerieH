@@ -33,19 +33,19 @@ const DATA = {
       punti: 0,
       vinte: 0,
       pareggi: 0,
-      perse: 2,
+      perse: 0,
       mvp: 0,
-      dr: "-4"
+      dr: "0"
     },
     {
       nome: "High Sea",
       logo: "",
-      punti: 6,
-      vinte: 2,
+      punti: 0,
+      vinte: 0,
       pareggi: 0,
       perse: 0,
       mvp: 2,
-      dr: 4
+      dr: 0
     }
     // Per aggiungere una nuova squadra, copia uno di questi blocchi
     // e incollalo qui sotto con una virgola prima.
@@ -114,7 +114,7 @@ const DATA = {
   // ricalcolati dalle partite giocate qui sotto (i numeri scritti a mano
   // in "standings" vengono ignorati, tranne "mvp" che resta manuale).
   // Se false, la classifica resta quella scritta a mano in "standings".
-  classificaAutomatica: false,
+  classificaAutomatica: true,
 
   // ---------- PARTITE ----------
   // Una riga per partita. Campi:
@@ -134,6 +134,12 @@ const DATA = {
   //   { giornata: 2, data: "2026-09-19", ora: "15:00", campo: "Campo 1",
   //     casa: "High Sea", trasferta: "Princeps" },
   partite: [
+      { giornata: 1, data: "2026-11-06", ora: "11:00", campo: "T.Stadium",
+       casa: "FCAC", trasferta: "High Sea",
+       golCasa: 8, golTrasferta: 9, marcatori: "Berardi 2, Bovino 2, Campanale 4, Zaza, Dell'Accio, Baccellieri, Capogna 4, Autogoal", mvp: "Bovino" },
+     { giornata: 2, data: "2026-11-10", ora: "10:00", campo: "T.Stadium",
+       casa: "High Sea", trasferta: "FCAC",
+       golCasa: 6, golTrasferta: 3, marcatori: "Berardi, Bovino, Campanale, Zaza, Dell'Accio 2, Baccellieri, Capogna, Chiarulli", mvp: "Chiarulli" }
   ],
    
   // ---------- FORMAZIONI SQUADRE ----------
