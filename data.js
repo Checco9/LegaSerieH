@@ -114,7 +114,7 @@ const DATA = {
   // ricalcolati dalle partite giocate qui sotto (i numeri scritti a mano
   // in "standings" vengono ignorati, tranne "mvp" che resta manuale).
   // Se false, la classifica resta quella scritta a mano in "standings".
-  classificaAutomatica: true,
+  classificaAutomatica: "true",
 
   // ---------- PARTITE ----------
   // Una riga per partita. Campi:
