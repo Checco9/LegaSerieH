@@ -107,6 +107,35 @@ const DATA = {
     // Aggiorna dopo ogni partita.
   ],
 
+  // ---------- PUNTEGGIO (usato solo se classificaAutomatica è true) ----------
+  punteggio: { vittoria: 3, pareggio: 1, sconfitta: 0 },
+
+  // Se true, vinte/pareggi/perse/punti/DR della CLASSIFICA vengono
+  // ricalcolati dalle partite giocate qui sotto (i numeri scritti a mano
+  // in "standings" vengono ignorati, tranne "mvp" che resta manuale).
+  // Se false, la classifica resta quella scritta a mano in "standings".
+  classificaAutomatica: false,
+
+  // ---------- PARTITE ----------
+  // Una riga per partita. Campi:
+  //   giornata    numero della giornata (serve per raggruppare)
+  //   data, ora   "AAAA-MM-GG" e "HH:MM" (facoltativi)
+  //   campo       dove si gioca (facoltativo)
+  //   casa, trasferta   nomi ESATTAMENTE come in "standings"
+  //   golCasa, golTrasferta   il risultato: se mancano = da giocare
+  //   marcatori   testo libero, es. "Berardi 2, Bovino" (facoltativo)
+  //   mvp         nome del giocatore MVP della partita (facoltativo)
+  //   stato       "rinviata" per segnalare un rinvio (facoltativo)
+  //
+  // Esempi (copia, incolla e modifica):
+  //   { giornata: 1, data: "2026-09-12", ora: "15:00", campo: "Campo 1",
+  //     casa: "Princeps", trasferta: "High Sea",
+  //     golCasa: 2, golTrasferta: 1, marcatori: "Berardi 2, Bovino", mvp: "Berardi" },
+  //   { giornata: 2, data: "2026-09-19", ora: "15:00", campo: "Campo 1",
+  //     casa: "High Sea", trasferta: "Princeps" },
+  partite: [
+  ],
+   
   // ---------- FORMAZIONI SQUADRE ----------
   squadre: [
     { nome: "FCAC", formazione: "linepu_princeps.png" },
