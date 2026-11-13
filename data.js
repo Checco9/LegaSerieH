@@ -44,7 +44,7 @@ const DATA = {
       vinte: 0,
       pareggi: 0,
       perse: 0,
-      mvp: 2,
+      mvp: 3,
       dr: 0
     }
     // Per aggiungere una nuova squadra, copia uno di questi blocchi
@@ -73,7 +73,7 @@ const DATA = {
       { nome: "Scudetto", numero: 1 }
     ] },
     { nome: "Grosso", squadra: "FCAC", gol: 0, trofei: [] },
-    { nome: "La Stella", squadra: "FCAC", gol: 0, trofei: [
+    { nome: "Lastella", squadra: "FCAC", gol: 0, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
     { nome: "Bovino", squadra: "High Sea", gol: 5, trofei: [
@@ -96,13 +96,14 @@ const DATA = {
   // ---------- MVP (numero di premi MVP vinti) ----------
   mvp: [
     { nome: "Bovino", squadra: "High Sea", premi: 1 },
-    { nome: "Chiarulli", squadra: "High Sea", premi: 1 }
+    { nome: "Chiarulli", squadra: "High Sea", premi: 1 },
+    { nome: "Dell'Accio", squadra: "High Sea", premi: 1 }
     // Aggiungi qui i giocatori che vincono il premio MVP di giornata.
   ],
 
   // ---------- PORTIERI (es. clean sheet / gol subiti) ----------
   portieri: [
-    { nome: "La Stella", squadra: "FCAC", cleanSheet: 0, golSubiti: 22 },
+    { nome: "Lastella", squadra: "FCAC", cleanSheet: 0, golSubiti: 22 },
     { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 15 }
     // Aggiorna dopo ogni partita.
   ],
@@ -142,7 +143,7 @@ const DATA = {
        golCasa: 6, golTrasferta: 3, marcatori: "Berardi, Bovino, Campanale, Zaza, Dell'Accio 2, Bacellieri, Capogna, Chiarulli", mvp: "Chiarulli" },
      { giornata: 3, data: "2026-11-13", ora: "11:00", campo: "T.Stadium",
        casa: "FCAC", trasferta: "High Sea",
-       golCasa: 4, golTrasferta: 7, marcatori: "Dell'Accio 3, Bovino 2, Capogna, Chiarulli, Berardi 2, Zaza 2", mvp: "?" }
+       golCasa: 4, golTrasferta: 7, marcatori: "Dell'Accio 3, Bovino 2, Capogna, Chiarulli, Berardi 2, Zaza 2", mvp: "Dell'Accio" }
   ],
    
   // ---------- FORMAZIONI SQUADRE ----------
