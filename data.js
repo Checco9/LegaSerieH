@@ -34,7 +34,7 @@ const DATA = {
       vinte: 0,
       pareggi: 0,
       perse: 0,
-      mvp: 0,
+      mvp: 1,
       dr: 0
     },
     {
@@ -62,10 +62,10 @@ const DATA = {
         { nome: "Pallone D'Oro", numero: 1 }
       ]
     },
-    { nome: "Campanale", squadra: "FCAC", gol: 5, trofei: [
+    { nome: "Campanale", squadra: "FCAC", gol: 6, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Zaza", squadra: "FCAC", gol: 4, trofei: [
+    { nome: "Zaza", squadra: "FCAC", gol: 5, trofei: [
       { nome: "Scudetto", numero: 1 },
       { nome: "MVP Centrocampisti", numero: 1 }
     ] },
@@ -97,14 +97,15 @@ const DATA = {
   mvp: [
     { nome: "Bovino", squadra: "High Sea", premi: 1 },
     { nome: "Chiarulli", squadra: "High Sea", premi: 1 },
-    { nome: "Dell'Accio", squadra: "High Sea", premi: 1 }
+    { nome: "Dell'Accio", squadra: "High Sea", premi: 1 },
+    { nome: "Zaza", squadra: "FCAC", premi: 1 }
     // Aggiungi qui i giocatori che vincono il premio MVP di giornata.
   ],
 
   // ---------- PORTIERI (es. clean sheet / gol subiti) ----------
   portieri: [
-    { nome: "Lastella", squadra: "FCAC", cleanSheet: 0, golSubiti: 22 },
-    { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 15 }
+    { nome: "Lastella", squadra: "FCAC", cleanSheet: 0, golSubiti: 23 },
+    { nome: "Gallo", squadra: "High Sea", cleanSheet: 0, golSubiti: 17 }
     // Aggiorna dopo ogni partita.
   ],
 
@@ -143,7 +144,10 @@ const DATA = {
        golCasa: 6, golTrasferta: 3, marcatori: "Berardi, Bovino, Campanale, Zaza, Dell'Accio 2, Bacellieri, Capogna, Chiarulli", mvp: "Chiarulli" },
      { giornata: 3, data: "2026-11-13", ora: "11:00", campo: "T.Stadium",
        casa: "FCAC", trasferta: "High Sea",
-       golCasa: 4, golTrasferta: 7, marcatori: "Dell'Accio 3, Bovino 2, Capogna, Chiarulli, Berardi 2, Zaza 2", mvp: "Dell'Accio" }
+       golCasa: 4, golTrasferta: 7, marcatori: "Dell'Accio 3, Bovino 2, Capogna, Chiarulli, Berardi 2, Zaza 2", mvp: "Dell'Accio" },
+     { giornata: 4, data: "2026-11-17", ora: "10:00", campo: "T.Stadium",
+       casa: "High Sea", trasferta: "FCAC",
+       golCasa: 1, golTrasferta: 2, marcatori: "Autogoal, Zaza, Campanale", mvp: "Zaza" }
   ],
    
   // ---------- FORMAZIONI SQUADRE ----------
@@ -158,14 +162,9 @@ const DATA = {
   // ordinate dalla più recente, non serve tenerle in ordine qui.
   news: [
     {
-      data: "2026-11-06",
-      titolo: "Prima di campionato!",
-      testo: "Si chiude con un 9-8 la prima di campionato!"
-    },
-    {
-      data: "2026-11-10",
-      titolo: "Ancora loro!",
-      testo: "Altra prestazione convincente degli High Sea che battono 6-3 gli avversari al T.Stadium! Importante nella vittoria è l'apporto difensivo dell'mvp Chiarulli!"
+      data: "2026-11-17",
+      titolo: "90+3",
+      testo: "Con un assente in entrambi le formazioni la partita è in bilico fino all'ultimo minuto, a chiuderla è il senegalese dei FCAC!"
     }
     // { data: "AAAA-MM-GG", titolo: "...", testo: "..." },
   ]
