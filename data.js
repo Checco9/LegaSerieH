@@ -34,7 +34,7 @@ const DATA = {
       vinte: 0,
       pareggi: 0,
       perse: 0,
-      mvp: 2,
+      mvp: 3,
       dr: 0
     },
     {
@@ -56,13 +56,13 @@ const DATA = {
   // puoi anche lasciare l'array vuoto [].
   marcatori: [
     {
-      nome: "Berardi", squadra: "FCAC", gol: 6,
+      nome: "Berardi", squadra: "FCAC", gol: 11,
       trofei: [
         { nome: "Scudetto", numero: 1 },
         { nome: "Pallone D'Oro", numero: 1 }
       ]
     },
-    { nome: "Campanale", squadra: "FCAC", gol: 6, trofei: [
+    { nome: "Campanale", squadra: "FCAC", gol: 7, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
     { nome: "Zaza", squadra: "FCAC", gol: 6, trofei: [
@@ -79,9 +79,9 @@ const DATA = {
     { nome: "Bovino", squadra: "High Sea", gol: 6, trofei: [
       { nome: "MVP Attaccanti", numero: 1 }
     ] },
-    { nome: "Dell'Accio", squadra: "High Sea", gol: 7, trofei: [] },
-    { nome: "Capogna", squadra: "High Sea", gol: 6, trofei: [] },
-    { nome: "Bacellieri", squadra: "High Sea", gol: 2, trofei: [] },
+    { nome: "Dell'Accio", squadra: "High Sea", gol: 11, trofei: [] },
+    { nome: "Capogna", squadra: "High Sea", gol: 7, trofei: [] },
+    { nome: "Bacellieri", squadra: "High Sea", gol: 3, trofei: [] },
     { nome: "Chiarulli", squadra: "High Sea", gol: 3, trofei: [
       { nome: "MVP Difensori", numero: 1 }
     ] },
@@ -99,14 +99,15 @@ const DATA = {
     { nome: "Chiarulli", squadra: "High Sea", premi: 1 },
     { nome: "Dell'Accio", squadra: "High Sea", premi: 1 },
     { nome: "Zaza", squadra: "FCAC", premi: 1 },
-    { nome: "Gallo", squadra: "FCAC", premi: 1 }
+    { nome: "Gallo", squadra: "FCAC", premi: 1 },
+    { nome: "Berardi", squadra: "FCAC", premi: 1 }
     // Aggiungi qui i giocatori che vincono il premio MVP di giornata.
   ],
 
   // ---------- PORTIERI (es. clean sheet / gol subiti) ----------
   portieri: [
-    { nome: "Lastella", squadra: "High Sea", cleanSheet: 0, golSubiti: 28 },
-    { nome: "Gallo", squadra: "FCAC", cleanSheet: 0, golSubiti: 20 }
+    { nome: "Lastella", squadra: "High Sea", cleanSheet: 0, golSubiti: 34 },
+    { nome: "Gallo", squadra: "FCAC", cleanSheet: 0, golSubiti: 26 }
     // Aggiorna dopo ogni partita.
   ],
 
@@ -151,7 +152,10 @@ const DATA = {
        golCasa: 1, golTrasferta: 2, marcatori: "Autogoal, Zaza, Campanale", mvp: "Zaza" },
      { giornata: 5, data: "2026-11-20", ora: "11:00", campo: "F.Coppi",
        casa: "FCAC", trasferta: "High Sea",
-       golCasa: 5, golTrasferta: 3, marcatori: "Rossano 2, Zaza, Berardi, Autogoal | Bovino, Dell'Accio, Chiarulli", mvp: "Gallo" }
+       golCasa: 5, golTrasferta: 3, marcatori: "Rossano 2, Zaza, Berardi, Autogoal | Bovino, Dell'Accio, Chiarulli", mvp: "Gallo" },
+     { giornata: 6, data: "2026-11-24", ora: "10:00", campo: "T.Stadium",
+       casa: "High Sea", trasferta: "FCAC",
+       golCasa: 6, golTrasferta: 6, marcatori: "Dell'Accio 4, Capogna, Bacellieri | Berardi 5, Campanale", mvp: "Berardi" }
   ],
    
   // ---------- FORMAZIONI SQUADRE ----------
