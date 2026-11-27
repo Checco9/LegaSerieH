@@ -56,33 +56,33 @@ const DATA = {
   // puoi anche lasciare l'array vuoto [].
   marcatori: [
     {
-      nome: "Berardi", squadra: "FCAC", gol: 11,
+      nome: "Berardi", squadra: "FCAC", gol: 13,
       trofei: [
         { nome: "Scudetto", numero: 1 },
         { nome: "Pallone D'Oro", numero: 1 }
       ]
     },
-    { nome: "Campanale", squadra: "FCAC", gol: 7, trofei: [
+    { nome: "Campanale", squadra: "FCAC", gol: 10, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Zaza", squadra: "FCAC", gol: 6, trofei: [
+    { nome: "Zaza", squadra: "FCAC", gol: 7, trofei: [
       { nome: "Scudetto", numero: 1 },
       { nome: "MVP Centrocampisti", numero: 1 }
     ] },
-    { nome: "Rossano", squadra: "FCAC", gol: 2, trofei: [
+    { nome: "Rossano", squadra: "FCAC", gol: 3, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
     { nome: "Grosso", squadra: "FCAC", gol: 0, trofei: [] },
     { nome: "Lastella", squadra: "High Sea", gol: 0, trofei: [
       { nome: "Scudetto", numero: 1 }
     ] },
-    { nome: "Bovino", squadra: "High Sea", gol: 6, trofei: [
+    { nome: "Bovino", squadra: "High Sea", gol: 9, trofei: [
       { nome: "MVP Attaccanti", numero: 1 }
     ] },
-    { nome: "Dell'Accio", squadra: "High Sea", gol: 11, trofei: [] },
-    { nome: "Capogna", squadra: "High Sea", gol: 7, trofei: [] },
-    { nome: "Bacellieri", squadra: "High Sea", gol: 3, trofei: [] },
-    { nome: "Chiarulli", squadra: "High Sea", gol: 3, trofei: [
+    { nome: "Dell'Accio", squadra: "High Sea", gol: 12, trofei: [] },
+    { nome: "Capogna", squadra: "High Sea", gol: 8, trofei: [] },
+    { nome: "Bacellieri", squadra: "High Sea", gol: 4, trofei: [] },
+    { nome: "Chiarulli", squadra: "High Sea", gol: 4, trofei: [
       { nome: "MVP Difensori", numero: 1 }
     ] },
     { nome: "Gallo", squadra: "FCAC", gol: 0, trofei: [
@@ -100,14 +100,15 @@ const DATA = {
     { nome: "Dell'Accio", squadra: "High Sea", premi: 1 },
     { nome: "Zaza", squadra: "FCAC", premi: 1 },
     { nome: "Gallo", squadra: "FCAC", premi: 1 },
-    { nome: "Berardi", squadra: "FCAC", premi: 1 }
+    { nome: "Berardi", squadra: "FCAC", premi: 1 },
+    { nome: "?", squadra: "?", premi: 1 }
     // Aggiungi qui i giocatori che vincono il premio MVP di giornata.
   ],
 
   // ---------- PORTIERI (es. clean sheet / gol subiti) ----------
   portieri: [
-    { nome: "Lastella", squadra: "High Sea", cleanSheet: 0, golSubiti: 34 },
-    { nome: "Gallo", squadra: "FCAC", cleanSheet: 0, golSubiti: 26 }
+    { nome: "Lastella", squadra: "High Sea", cleanSheet: 0, golSubiti: 42 },
+    { nome: "Gallo", squadra: "FCAC", cleanSheet: 0, golSubiti: 33 }
     // Aggiorna dopo ogni partita.
   ],
 
@@ -153,9 +154,12 @@ const DATA = {
      { giornata: 5, data: "2026-11-20", ora: "11:00", campo: "F.Coppi",
        casa: "FCAC", trasferta: "High Sea",
        golCasa: 5, golTrasferta: 3, marcatori: "Rossano 2, Zaza, Berardi, Autogoal | Bovino, Dell'Accio, Chiarulli", mvp: "Gallo" },
-     { giornata: 6, data: "2026-11-24", ora: "10:00", campo: "T.Stadium",
+     { giornata: 6, data: "2026-11-24", ora: "10:00", campo: "F.Coppi",
        casa: "High Sea", trasferta: "FCAC",
-       golCasa: 6, golTrasferta: 6, marcatori: "Dell'Accio 4, Capogna, Bacellieri | Berardi 5, Campanale", mvp: "Berardi" }
+       golCasa: 6, golTrasferta: 6, marcatori: "Dell'Accio 4, Capogna, Bacellieri | Berardi 5, Campanale", mvp: "Berardi" },
+     { giornata: 7, data: "2026-11-27", ora: "11:00", campo: "T.Stadium",
+       casa: "FCAC", trasferta: "High Sea",
+       golCasa: 8, golTrasferta: 7, marcatori: "Campanale 3, Berardi 2, Zaza, Rossano, Autogoal | Bovino 3, Dell'Accio, Capogna, Chiarulli, Bacellieri", mvp: "?" }
   ],
    
   // ---------- FORMAZIONI SQUADRE ----------
@@ -170,9 +174,9 @@ const DATA = {
   // ordinate dalla più recente, non serve tenerle in ordine qui.
   news: [
     {
-      data: "2026-11-17",
-      titolo: "90+3",
-      testo: "Con un assente in entrambi le formazioni la partita è in bilico fino all'ultimo minuto, a chiuderla è il senegalese dei FCAC!"
+      data: "2026-11-27",
+      titolo: "Dal senegal con furore",
+      testo: "Il senegalese si ripete con un goal prima dello scadere!"
     }
     // { data: "AAAA-MM-GG", titolo: "...", testo: "..." },
   ]
